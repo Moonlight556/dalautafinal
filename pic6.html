@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>home</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  />
+		
+		<style>
+			*{
+				margin:0;
+				padding:0
+				font-family:"sans-seref";
+			}		
+			body{
+				position:center;
+				justify-content:center;
+				align-items:center;
+				background:#1a273a;
+                background-size:cover;
+                 
+            
+			}
+
+
+            #header{
+			display: flex;
+			align-items:center;
+			justify-content:space-between;
+			padding:20px 80px;
+			background:white;
+			box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+			z-index:999;
+			position:sticky;
+			top:0;
+			left:0;
+		}
+		#header img{
+			width:150px;
+			height:100%;
+		}
+		#stname{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+		}
+		#stname li{
+			list-style:none;
+			padding: 0 20px;
+			position:relative;
+			
+		}
+		#stname li a{
+			text-decoration:none;
+			font-size:16px;
+			font-weight:600;
+			color:#424144;;
+			transition:0.3s ease;
+			font-family: 'Times New Roman';
+		}
+		#stname li a:hover{
+		
+			color:#0affff;
+            font-size:20px;
+		}
+		
+		
+		#stname li a:hover::after{
+			content: "";
+			width:30%;
+			height:2px;
+			background:#0affff;
+			position:absolute;
+			bottom: -4px;
+			left: 20px;
+		}
+
+        .oh{
+		display: flex;
+		
+		text-align:center;
+		margin-top:50px;
+        margin:50px;
+		color: #fdbd01;
+		font-weight:900;
+        
+	.history{
+		margin:0 50px;
+        margin:10px;
+		height:580px ;
+		width:700px;
+        }
+	
+		
+	
+             
+		</style>
+	</head>
+	<body>
+        <section id="header">
+			<a href="#"><img src="logo.png" class="logo" alt=""></a>
+			
+			<div>
+				<ul id="stname">
+					<li><a href="frankhome.html">HOME</a></li>
+					<li><a href="frankcontent.html">GALLERY</a></li>
+					
+				</ul>
+			</div>
+			
+		</section>
+
+         <div class="oh">
+    			<div class="history">
+    			<h1 style="font-size:50px; "><u>MY LATEST COMISSION PORTRAIT</u></h1><br><br>
+    			
+    			<h1 class="p2" style="color:white;"> this is my latest portrait there is nothing special with it, but this girl is the new girlfriend of the guy who ordered me that second portrait.  </h1><br>
+   
+    			</div>
+    			<div class="history"><img src="image/14.jpg" width="800" height="600"></div>
+    		</div>
+        
+		
+
+	</body>
+</html>

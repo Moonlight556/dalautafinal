@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>home</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  />
+		
+		<style>
+			*{
+				margin:0;
+				padding:0
+				font-family:"sans-seref";
+			}		
+			body{
+				position:center;
+				justify-content:center;
+				align-items:center;
+				background:#1a273a;
+                background-size:cover;	
+			}
+
+
+            #header{
+			display: flex;
+			align-items:center;
+			justify-content:space-between;
+			padding:20px 80px;
+			background:white;
+			box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+			z-index:999;
+			position:sticky;
+			top:0;
+			left:0;
+		}
+		#header img{
+			width:150px;
+			height:100%;
+		}
+		#stname{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+		}
+		#stname li{
+			list-style:none;
+			padding: 0 20px;
+			position:relative;
+			
+		}
+		#stname li a{
+			text-decoration:none;
+			font-size:16px;
+			font-weight:600;
+			color:#424144;;
+			transition:0.3s ease;
+			font-family: 'Times New Roman';
+		}
+		#stname li a:hover{
+		
+			color:#0affff;
+            font-size:20px;
+		}
+		
+		
+		#stname li a:hover::after{
+			content: "";
+			width:30%;
+			height:2px;
+			background:#0affff;
+			position:absolute;
+			bottom: -4px;
+			left: 20px;
+		}
+
+        .content{
+            width: 1200px;
+            height: auto;
+            margin: auto;
+            color:#daeaf7;
+            position: relative;
+            
+        }
+        .content .par{
+            padding-left: 20px;
+            padding-bottom: 25px;
+            font-family: Arial;
+            letter-spacing: 1.2px;
+            line-height: 30px;
+        }
+        .content h1{
+            font-family: 'Times New Roman';
+            font-size: 50px;
+            padding-left: 20px;
+            margin-top: 9%;
+            letter-spacing: 3px;
+        }
+        .content .cn{
+            width: 160px;
+            height: 40px;
+            background:orange;
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition:.4s ease;
+        }
+        .content .cn a{
+            text-decoration: none;
+            color:black;
+            transition:.3s ease;
+           
+        }
+        .cn:hover{
+            background-color: white;
+        }
+        .content span{
+            color: orange;
+            font-size: 60px;
+        }    
+						    
+		</style>
+	</head>
+	<body>
+        <section id="header">
+			<a href="https://www.facebook.com/zdspgc/"><img src="logo.png" class="logo" alt=""></a>
+			
+			<div>
+				<ul id="stname">
+					<li><a>FRANK MONLIE DALAUTA</a></li>
+					<li><a>2nd Year</a></li>
+					<li><a>BSIS</a></li>
+				</ul>
+			</div>
+			
+		</section>
+
+        <div class="content">
+            
+        
+        <h1>My Artworks<br><span>Collection</span></h1>
+        
+        <p class="par">This page is all about one of my hobbies which is Art.<br>It contains some of my Artworks.<br>This includes Paintings and Portraits that I made .</p>
+        
+        
+        <button class="cn"><a href="frankcontent.html">MY COLLECTION</a></button>
+        
+    
+        </div>
+
+        
+		
+
+	</body>
+</html>

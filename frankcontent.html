@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>content</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  />
+		
+		<style>
+			*{
+				margin:0;
+				padding:0
+				font-family:"sans-seref";
+			}		
+			body{
+				position:center;
+				justify-content:center;
+				align-items:center;
+				background:#1a273a;
+                background-size:cover;	
+			}
+
+
+            #header{
+			display: flex;
+			align-items:center;
+			justify-content:space-between;
+			padding:20px 80px;
+			background:white;
+			box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+			z-index:999;
+			position:sticky;
+			top:0;
+			left:0;
+		}
+		#header img{
+			width:150px;
+			height:100%;
+		}
+		#stname{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+		}
+		#stname li{
+			list-style:none;
+			padding: 0 20px;
+			position:relative;
+			
+		}
+		#stname li a{
+			text-decoration:none;
+			font-size:16px;
+			font-weight:600;
+			color:#424144;;
+			transition:0.3s ease;
+			font-family: 'Times New Roman';
+		}
+		#stname li a:hover{
+		
+			color:#0affff;
+            font-size:20px;
+		}
+		
+		
+		#stname li a:hover::after{
+			content: "";
+			width:30%;
+			height:2px;
+			background:#0affff;
+			position:absolute;
+			bottom: -4px;
+			left: 20px;
+		}
+
+            .title h1{
+                color:orange;
+                font-size:50px;
+            }
+
+            
+			.container{
+				position:relative;
+				display: grid;
+		        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+				width:1100px;
+				justify-content:space-between;
+				align-items:center;
+				flex-wrap: wrap;
+				padding:30px;
+                
+			}
+			.container .card{
+                margin-top:20px;
+				position:relative;
+				max-width:300px;
+				height:250px;
+				background-color:#daeaf7;
+				margin:30px 10px;
+				padding:20px 15px;
+				display: flex;
+				flex-direction:column;
+				box-shadow:0 5px 202px rgba(0,0,0,0.5);
+				transition:0.3s ease-in-out;
+                border-radius:20px;
+                margin-left:20px;
+			}
+			.container .card:hover{
+			    height:380px;
+			}
+			.container .card .imgBx{
+			    position:center;
+				width:100%;
+				height:260px;
+				top:-60px;
+				left:20px;
+				
+                background-color:orange;
+                border-radius:20px;
+				box-shadow:0 5px 20px rgba(0,0,0,0.5);
+			}
+			.container .card .imgBx img{
+			    max-width:100%;
+			    border-radius:10px;
+			}
+			.container .card .content{
+			   position:relative;
+			   margin-top:-140px;
+			   padding:10px 15px;
+			   text-align:center;
+			   color:black;
+			   visibility:hidden;
+			   opacity:0;
+			   transition:0.3s ease-in-out;
+			}
+			.container .card:hover .content{
+			    visibility:visible;
+			    opacity:1;
+			    margin-top:-10px;
+			    transition-delay:0.3s;
+			}
+
+
+            .view{
+                width: 160px;
+                height: 40px;
+                background:orange;
+                border: none;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                font-size: 18px;
+                border-radius: 10px;
+                cursor: pointer;
+                color:white;
+                font-weight:900;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+                transition: 0.2s ease;
+            }
+
+            .view:hover{
+                background:white;
+                color:orange;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+                width: 165px;
+                height: 45px;
+            }
+
+
+          
+		
+			    
+		</style>
+	</head>
+	<body>
+        <section id="header">
+			<a href="#"><img src="logo.png" class="logo" alt=""></a>
+			
+			<div>
+				<ul id="stname">
+					<li><a >FRANK MONLIE DALAUTA</a></li>
+					<li><a >2nd Year</a></li>
+					<li><a >BSIS</a></li>
+                    <li><a href="frankhome.html">HOME</a></li>
+                  
+				</ul>
+			</div>
+			
+		</section>
+
+        <center><div class="title">
+            <h1><u>My Artwork Gallery</u></h1>
+        </div></center>
+
+
+
+        
+		<div class="container">
+			<div class="card">
+				<div class="imgBx">
+					<img src="image/5.jpg" alt="">
+				</div>
+				<div class="content">
+					<div>
+						<h2><br>Portrait Of My Self</h2>						
+                        <a href="pic1.html"> <button class="view">VIEW</button> </a>
+					</div>
+				</div>
+			</div>
+
+
+            <div class="card">
+				<div class="imgBx">
+					<img src="image/6.jpg" alt="">
+				</div>
+				<div class="content">
+					<div>
+						<h2><br>My Mother's Portrait</h2>						
+                        <a href="pc2.html"> <button class="view">VIEW</button> </a>
+					</div>
+				</div>                
+			</div>
+
+
+            <div class="card">
+				<div class="imgBx">
+					<img src="image/3.jpg" alt="">
+				</div>
+				<div class="content">
+					<div>
+						<h2><br>Portrait Of My Buddy</h2>						
+                        <a href="pic3.html"> <button class="view">VIEW</button></a>
+					</div>
+				</div>
+			</div>
+
+            <div class="card">
+				<div class="imgBx">
+					<img src="image/8.jpg" alt="">
+				</div>
+				<div class="content">
+					<div>
+						<h2><br>First Commision Portrait</h2>						
+                        <a href="pic4.html"> <button class="view">VIEW</button></a>
+					</div>
+				</div>
+			</div>
+
+            <div class="card">
+				<div class="imgBx">
+					<img src="image/12.jpg" alt="">
+				</div>
+				<div class="content">
+					<div>
+						<h2><br>2nd Commision Portrait</h2>						
+                        <a href="pic5.html"> <button class="view">VIEW</button></a>
+					</div>
+				</div>
+			</div>
+
+            <div class="card">
+				<div class="imgBx">
+					<img src="image/14.jpg" alt="">
+				</div>
+				<div class="content">
+					<div>
+						<h2><br>My Latest Commision Portrait</h2>
+						
+                        <a href="pic6.html"> <button class="view">VIEW</button></a>
+					</div>
+				</div>
+                
+			</div>
+            <div class="card">
+				<div class="imgBx">
+					<img src="image/13.jpg" alt="">
+				</div>
+				<div class="content">
+					<div>
+						<h2><br>My Imaginary Portrait</h2>						
+                        <a href="pic7.html"> <button class="view">VIEW</button></a>
+					</div>
+				</div>
+                
+			</div>
+
+            <div class="card">
+				<div class="imgBx">
+					<img src="image/11.jpg" alt="">
+				</div>
+				<div class="content">
+					<div>
+						<h2><br>My Grandfather's Portrait</h2>
+						
+                      <a href="pic8.html"> <button class="view">VIEW</button></a>
+					</div>
+				</div>
+                
+			</div>
+
+            <div class="card">
+				<div class="imgBx" style="background:#310B03;"</style>
+					<img src="image/4.jpg" alt="">
+				</div>
+				<div class="content">
+					<div>
+						<h2><br>My Paintings</h2>
+						
+                        <a href="pic9.html"> <button class="view">VIEW</button></a>
+					</div>
+				</div>
+                
+			</div>
+
+            
+		</div>
+            
+	</body>
+</html>
